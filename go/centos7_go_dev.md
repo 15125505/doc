@@ -64,3 +64,8 @@ nohup bee run > run.log 2>&1 &
 ```
 ps -ef|grep myexe
 ```
+
+* 杀掉指定名称的所有进程
+```
+killall myexe
+```
