@@ -69,3 +69,8 @@ ps -ef|grep myexe
 ```
 killall myexe
 ```
+
+* 查询指定端口对应的执行文件，比如要查看80端口的占用情况，可以用如下指令
+```
+lsof -i tcp:80
+```
