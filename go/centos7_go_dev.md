@@ -14,16 +14,22 @@ yum install -y git
 
 ## 3. 配置GOPATH
 
-* 可以生成一个configPath.sh文件，来配置一下这些参数，文件中的内容可以如下书写。
+* GOPATH环境变量设置有两种方法
+
+    * 方法一: 在/etc/profile文件中添加变量【对所有用户生效（永久的）】
+    * 方法二: 在用户目录下的.bash_profile文件中增加变量【对单一用户生效（永久的）】
+
+* 添加的内容可以如下书写：
 
 ```
 export GOPATH=~/work                #此处设置将要使用的开发目录
 export PATH=$PATH:$GOPATH/bin       #这样设置之后方便直接使用开发目录下bin中的命令
 ```
+
 * 使用source指令可以执行该sh命令（如果直接执行，那么效果是在子shell中，在当前shell中是没有效果的）
 
 ```
-source configPath.sh
+source .bash_profile
 ```
 
 * 当然，你也可以直接手动执行上面的两条指令，而不使用一个shell脚本。
