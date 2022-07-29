@@ -15,6 +15,8 @@ aux_links:
 aux_links_new_tab: true
 
 # 颜色样式 supports "light" (default) and "dark"
-color_scheme: dark
+color_scheme: light
 
 logo: "/images/logo.png"
+
+footer_content: "千里之行，始于足下。"
