@@ -12,5 +12,9 @@ search_enabled: true
 aux_links:
   "GitHub地址":
     - "//github.com/15125505/doc"
+aux_links_new_tab: true
 
-    
+# 颜色样式 supports "light" (default) and "dark"
+color_scheme: dark
+
+logo: "/images/logo.png"
