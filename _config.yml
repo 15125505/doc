@@ -1,6 +1,16 @@
-# remote_theme: just-the-docs/just-the-docs
-remote_theme: sighingnow/jekyll-gitbook
-title: [个人知识库]
-description: [船长的秘密基地]
-syntax_highlighter_style: colorful
-extra_header_js: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+remote_theme: just-the-docs/just-the-docs
+# remote_theme: sighingnow/jekyll-gitbook
+title: [船长的秘密基地]
+description: [存放一些个人技术备忘]
+# syntax_highlighter_style: colorful
+# extra_header_js: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+
+# 支持搜索
+search_enabled: true
+
+# 源地址
+aux_links:
+  "GitHub地址":
+    - "//github.com/15125505/doc"
+
+    
