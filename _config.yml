@@ -2,3 +2,5 @@
 remote_theme: sighingnow/jekyll-gitbook
 title: [个人知识库]
 description: [船长的秘密基地]
+syntax_highlighter_style: colorful
+extra_header_js: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
