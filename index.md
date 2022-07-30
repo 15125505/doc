@@ -4,6 +4,8 @@
 
 [测试一下mermaid流程图](./docs/crx/flow.md)
 
+[创建基于ts+webpack的chrome插件项目](./docs/ts/crx-ts.md)
+
 
 时序图
 ```mermaid
