@@ -78,6 +78,17 @@ echo >> webpack.common.js "        ]"
 echo >> webpack.common.js "    }"
 echo >> webpack.common.js "};"
 
+# ts配置文件
+echo >> tsconfig.json '{'
+echo >> tsconfig.json '  "compilerOptions": {'
+echo >> tsconfig.json '    "moduleResolution": "node",'
+echo >> tsconfig.json '    "outDir": "./dist/",'
+echo >> tsconfig.json '    "noImplicitAny": true,'
+echo >> tsconfig.json '    "module": "es6",'
+echo >> tsconfig.json '    "target": "es5",'
+echo >> tsconfig.json '    "allowJs": true'
+echo >> tsconfig.json '  }'
+echo >> tsconfig.json '}'
 
 
 # webpack开发环境配置文件
