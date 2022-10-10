@@ -102,7 +102,7 @@ nohup "./$localExeName" >>"run.log" 2>&1 &
 
 # 检测是否成功启动（等待1秒之后再检查，给与进程启动的时间）
 sleep 1s
-id=$(pgrep "$localExeName")
+id=$(pgrep -f "$localExeName")
 if [[ "$id" == "" ]]; then
   eErr "新版本未启动成功"
 fi
@@ -131,7 +131,7 @@ fi
 eNotice "版本号检查通过"
 
 # 杀掉原有进程
-id=$(pgrep "$killExeName")
+id=$(pgrep -f "$killExeName")
 if [[ "$id" != "" ]]; then
   eInfo "杀掉原有进程"
   kill "$id"
