@@ -46,6 +46,9 @@ cd "$(dirname "$0")" || eErr "获取脚本所在路径失败"
 svrFolderPath=$(pwd) # 服务程序本地目录
 eNotice "脚本所在路径为$svrFolderPath"
 
+# 等待10秒钟，保证后续操作能正常
+sleep 10s
+
 # 如果没有传入版本，则获取最新版本
 if [ "$targetVersion" == "" ]; then
   eInfo "从版本服务器获取最新版本号"
@@ -119,7 +122,9 @@ fi
 if ! echo "$sudoPwd" | sudo -S nginx -s reload; then
   eErr "重启nginx失败"
 fi
+sleep 1s
 eNotice "切换nginx成功"
+
 
 # 检验版本信息
 eInfo "检查版本号"
