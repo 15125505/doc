@@ -101,7 +101,7 @@ chmod +x "$localExeName"
 
 # 启动新版本
 eInfo "启动新版本"
-nohup "./$localExeName" >>"run.log" 2>&1 &
+nohup "./$localExeName" >>"../run.log" 2>&1 &
 
 # 检测是否成功启动（等待1秒之后再检查，给与进程启动的时间）
 sleep 1s
